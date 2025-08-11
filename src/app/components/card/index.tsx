@@ -96,34 +96,36 @@ export function CardOption() {
                   <div className="flex items-center mb-2">
                     <CardTitle className="text-6xl">Sobre mim</CardTitle>
                   </div>
-                  <CardDescription className="text-justify mb-6">
-                    Desenvolvedor Pleno com experiência sólida em React, Next.js, TypeScript e PHP,
-                    atuando em aplicações web modernas com foco em performance e usabilidade.
-                    Proficiente em HTML5, CSS3 e Tailwind CSS, com domínio de versionamento via Git e
-                    práticas de desenvolvimento ágil. Experiência tanto em front-end quanto em back-end, entregando soluções completas e escaláveis.
+                  <CardContent className="text-justify mb-6">
+                    <ScrollArea className="h-64 w-full rounded-md text-sm">
+                      Desenvolvedor Pleno com experiência sólida em React, Next.js, TypeScript e PHP,
+                      atuando em aplicações web modernas com foco em performance e usabilidade.
+                      Proficiente em HTML5, CSS3 e Tailwind CSS, com domínio de versionamento via Git e
+                      práticas de desenvolvimento ágil. Experiência tanto em front-end quanto em back-end, entregando soluções completas e escaláveis.
 
-                    <br />
-                    <br />
-                    Sou um entusiasta da tecnologia e um apaixonado
-                    por música. Acredito que a inovação e a criatividade
-                    andam de mãos dadas, e busco constantemente integrar
-                    essas duas paixões em minha vida profissional. Com
-                    experiência em Next.js, React.js e TypeScript, estou sempre buscando estar
-                    atualizado sobre as novas tecnologias e
-                    busco aplicar esse conhecimento de forma criativa. Além
-                    disso, a música é uma fonte constante de inspiração, que me ajuda
-                    a pensar fora da caixa e a abordar desafios de maneira original.
+                      <br />
+                      <br />
+                      Sou um entusiasta da tecnologia e um apaixonado
+                      por música. Acredito que a inovação e a criatividade
+                      andam de mãos dadas, e busco constantemente integrar
+                      essas duas paixões em minha vida profissional. Com
+                      experiência em Next.js, React.js e TypeScript, estou sempre buscando estar
+                      atualizado sobre as novas tecnologias e
+                      busco aplicar esse conhecimento de forma criativa. Além
+                      disso, a música é uma fonte constante de inspiração, que me ajuda
+                      a pensar fora da caixa e a abordar desafios de maneira original.
 
-                    <br />
-                    <br />
-                    <Link href="http://github.com/j0a0p300" target="_blank">
-                      <Button>Github</Button>
-                    </Link>
-                    <Button className="mx-2">Currículo</Button>
-                    <Link href="https://www.linkedin.com/in/joaopedrofariascosta" target="_blank">
-                      <Button>Linkedin</Button>
-                    </Link>
-                  </CardDescription>
+                      <br />
+                      <br />
+                      <Link href="http://github.com/j0a0p300" target="_blank">
+                        <Button>Github</Button>
+                      </Link>
+                      <Button className="mx-2">Currículo</Button>
+                      <Link href="https://www.linkedin.com/in/joaopedrofariascosta" target="_blank">
+                        <Button>Linkedin</Button>
+                      </Link>
+                    </ScrollArea>
+                  </CardContent>
                 </CardHeader>
               </Card>
             </TabsContent>
