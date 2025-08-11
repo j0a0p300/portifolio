@@ -1,6 +1,6 @@
 import { ModeToggle } from "@/components/button-theme";
-import { Header } from "./components/Header";
-import { CardOption } from "./components/Card";
+import { Header } from "./components/header";
+import { CardOption } from "./components/card";
 import {
   Card,
   CardContent,
