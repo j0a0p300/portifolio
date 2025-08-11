@@ -120,7 +120,9 @@ export function CardOption() {
                       <Link href="http://github.com/j0a0p300" target="_blank">
                         <Button>Github</Button>
                       </Link>
+                      <a href="./assets/curriculo_joao_pedro.docx" download>
                       <Button className="mx-2">Currículo</Button>
+                      </a>
                       <Link href="https://www.linkedin.com/in/joaopedrofariascosta" target="_blank">
                         <Button>Linkedin</Button>
                       </Link>
