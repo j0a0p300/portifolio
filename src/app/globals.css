@@ -2,61 +2,48 @@
 @tailwind components;
 @tailwind utilities;
 
-/* GLOBAL STYLES */
+
 body{
   margin: 0;
   padding: 0;
 }  
-  /* DEMO-SPECIFIC STYLES */
-
-#content{
-    height: 50vh;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-}
 
 #typewriter h1 {  
   font-family: monospace;
   font-size: 28px;
-  overflow: hidden; /* Ensures the content is not revealed until the animation */
-  border-right: .15em solid orange; /* The typwriter cursor */
-  white-space: nowrap; /* Keeps the content on a single line */
-  letter-spacing: .15em; /* Adjust as needed */
+  overflow: hidden; 
+  border-right: .15em solid orange; 
+  white-space: nowrap; 
+  letter-spacing: .15em; 
   animation:
     typing 2s steps(30, end),
     blink-caret .5s step-end infinite;
   padding: 2px 10px;
 }
   
-  /* The typing effect */
-  
 @keyframes typing {
   from { width: 0 }
   to { width: 100% }
 }
-  
-  /* The typewriter cursor effect */
   
 @keyframes blink-caret {  
   from, to { border-color: transparent }
   50% { border-color: black }
 }
 
-/* Conteúdo da Tab */
 #tabContent {
-  opacity: 0; /* Começa invisível */
-  animation: aparecer 1s forwards; /* Animação de 1 segundo */
-  animation-delay: 2s; /* Espera 3 segundos antes de começar */
+  opacity: 0; 
+  animation: aparecer 1s forwards; 
+  animation-delay: 2s; 
 }
 
 @keyframes aparecer {
   to {
-      opacity: 1; /* Termina visível */
+      opacity: 1; 
   }
 }
   
-/* Conteúdo do ModeToggle */
+
 @layer base {
   :root {
     --background: 0 0% 100%;

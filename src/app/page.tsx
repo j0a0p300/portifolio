@@ -1,6 +1,6 @@
 import { ModeToggle } from "@/components/button-theme";
-import { Header } from "./components/header";
-import { CardOption } from "./components/card";
+import { Header } from "./components/Header";
+import { CardOption } from "./components/Card";
 import {
   Card,
   CardContent,
@@ -14,8 +14,8 @@ const Home = () => {
   return (
     <>
       <Header/>
-      <main id="container">
-        <div id="content">
+      <main>
+        <div className="flex justify-center items-center h-64">
           <div id="typewriter">
             <h1>Olá, meu nome é João Pedro!</h1>
           </div>
