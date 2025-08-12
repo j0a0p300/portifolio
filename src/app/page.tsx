@@ -14,9 +14,9 @@ const Home = () => {
   return (
     <>
       <Header/>
-      <main>
-        <div className="flex justify-center items-center h-64">
-          <div id="typewriter">
+      <main className="w-screen">
+        <div className="flex w-screen justify-center items-center h-64">
+          <div id="typewriter" className="p-10">
             <h1>Olá, meu nome é João Pedro!</h1>
           </div>
         </div>

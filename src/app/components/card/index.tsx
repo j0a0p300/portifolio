@@ -19,14 +19,14 @@ import { Button } from "@/components/ui/button";
 export function CardOption() {
   return (
     <>
-      <div className="flex mt-40 justify-center">
+      <div className="flex lg:mt-40 justify-center">
         <div>
           <Tabs
             defaultValue="sobre"
             id="tabContent"
-            className="flex absolute pl-80 pr-80"
+            className="flex absolute lg:pl-80 lg:pr-80 flex-col lg:flex-row"
           >
-            <TabsList className="flex flex-col h-28 mr-4 min-w-72 mt-2">
+            <TabsList className="flex flex-col h-28 lg:mr-4 min-w-72 mt-2 ">
               <TabsTrigger value="sobre" className="w-full h-14">
                 Sobre
               </TabsTrigger>
@@ -37,7 +37,7 @@ export function CardOption() {
             <TabsContent value="next" className="w-full">
               <Card className="w-fit">
                 <CardHeader>
-                  <div className="flex">
+                  <div className="flex justify-center">
                     <div className="flex items-center">
                       <RiNextjsFill size={55} className="mr-2" />
                       <CardTitle className="text-2xl">Next.js</CardTitle>
@@ -53,14 +53,10 @@ export function CardOption() {
                     renderização do lado do servidor (SSR), geração de sites
                     estáticos (SSG), roteamento automático e otimização de
                     desempenho. Utilizo esse framework no meu dia a dia, para criação e manutenção dos projetos abaixo:
-
-                    <br />
-                    <br />
-                    Projetos em Next JS
                   </CardDescription>
                 </CardHeader>
                 <CardContent>
-                  <ScrollArea className="h-40 w-full rounded-md">
+                  <ScrollArea className="h-auto w-full rounded-md">
                     <Link href="/">
                       <li className="flex items-center pl-2 py-4 rounded hover:bg-gray-400 hover:cursor-pointer hover:transition transition">
                         <FaGithub size={30} className="mr-2" />{" "}
@@ -93,11 +89,11 @@ export function CardOption() {
             <TabsContent value="sobre" className="w-full">
               <Card className="w-fit">
                 <CardHeader>
-                  <div className="flex items-center mb-2">
+                  <div className="flex items-center mb-2 justify-center">
                     <CardTitle className="text-6xl">Sobre mim</CardTitle>
                   </div>
                   <CardContent className="text-justify mb-6">
-                    <ScrollArea className="h-64 w-full rounded-md text-sm">
+                    <ScrollArea className="h-auto w-full rounded-md text-sm mb-4">
                       Desenvolvedor Pleno com experiência sólida em React, Next.js, TypeScript e PHP,
                       atuando em aplicações web modernas com foco em performance e usabilidade.
                       Proficiente em HTML5, CSS3 e Tailwind CSS, com domínio de versionamento via Git e
@@ -114,19 +110,18 @@ export function CardOption() {
                       busco aplicar esse conhecimento de forma criativa. Além
                       disso, a música é uma fonte constante de inspiração, que me ajuda
                       a pensar fora da caixa e a abordar desafios de maneira original.
-
-                      <br />
-                      <br />
+                    </ScrollArea>
+                    <div className="flex">
                       <Link href="http://github.com/j0a0p300" target="_blank">
                         <Button>Github</Button>
                       </Link>
                       <a href="./assets/curriculo_joao_pedro.docx" download>
-                      <Button className="mx-2">Currículo</Button>
+                        <Button className="mx-2">Currículo</Button>
                       </a>
                       <Link href="https://www.linkedin.com/in/joaopedrofariascosta" target="_blank">
                         <Button>Linkedin</Button>
                       </Link>
-                    </ScrollArea>
+                    </div>
                   </CardContent>
                 </CardHeader>
               </Card>
